@@ -1,0 +1,109 @@
+/* vertical padding */
+
+tab-item-substance {
+    padding: 3px;
+}
+
+tab-item.removing, tab-item:not(.pinned).collapsed, tab-item.duplicating {
+	margin-top: -36px;
+}
+
+/* feedback */
+
+tab-item-substance {
+    cursor: pointer;
+}
+
+tab-item-substance .background, .newtab-button-box {
+  outline: 2px solid transparent;
+  background-color: transparent;
+}
+
+tab-item-substance:hover .background, .newtab-button-box:hover {
+    background-color: rgba(255,255,255,0.5);
+    cursor: pointer;
+    outline: 2px solid rgba(230,230,230,0.5);
+    outline-offset: -2px;
+}
+
+tab-twisty:hover, tab-closebox:hover, .newtab-action-selector-anchor:hover {
+    background: hsl(0, 0%, 93%);
+}
+
+tab-item.active tab-item-substance .background  {
+	background: white;
+}
+
+/* horizontal space */
+
+tab-label.label {
+    display: block;
+    line-height: 18px;
+	text-overflow: ellipsis;
+}
+
+.label-content {
+    max-width: calc(100vw - 115px);
+  	overflow: hidden;
+  	display: block;
+  	text-overflow: ellipsis
+}
+
+
+/* space around buttons */
+
+tab-twisty , tab-closebox {
+  	height: 30px;
+  	width: 30px;
+  	max-height: 30px;
+  	max-width: 30px;
+  	display: block;
+}
+
+tab-closebox::after {
+ 	position: absolute;
+  	top: 8px; left: 6px;
+	height: 16px;
+  	width: 16px;
+  	max-height: 16px;
+  	max-width: 16px;
+  	display: block;
+}
+
+tab-twisty {
+    margin-right: 3px
+}
+
+tab-twisty::before {
+ 	position: absolute;
+  	top: 5px; left: 5px;
+	height: 20px;
+  	width: 20px;
+  	max-height: 20px;
+  	max-width: 20px;
+  	display: block;
+}
+
+tab-favicon {
+	margin-right: 5px;
+}
+
+.newtab-button {
+	padding: 8px;
+}
+
+.newtab-action-selector-anchor, .newtab-action-selector-anchor:after {
+  	width: 24px;
+  	max-width: 24px;
+  	height: 33px;
+  	max-height: 33px;
+  	padding: 0px;
+  	border: none;
+}
+
+.newtab-action-selector-anchor {
+  	cursor: s-resize;
+  	display: block;
+  	position: absolute;
+  	right: 6px
+}
